@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -19,7 +19,7 @@ public class Projects {
 	static WebDriver driver;
 	static String id;
 	
-	@BeforeMethod
+	@BeforeClass
 	public static void driverSetup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -47,8 +47,8 @@ public class Projects {
 	}
 	
 	
-	@Test
-	public void test1_createProject() {
+	@Test(priority=1)
+	public void test1createProject() {
 		
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/ul/li[7]/a")).click();
 		
@@ -76,22 +76,35 @@ public class Projects {
 		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div/div[6]/button")).click();
 		
+		
 	}
 	
-	@Test
-	public void test2_allocateProjectToCompany() {
+	@Test(priority=2)
+	public void test2allocateProjectToCompany() {
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/ul/li[7]/a")).click();
+		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div[1]/a[2]")).click();
+		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div[1]/a")).click();
+		
 		Select SelectMenu = new Select(driver.findElement(By.id("project_id")));
 		
-		SelectMenu.selectByValue("4");
+	    int selectOptions = SelectMenu.getOptions().size();
+	    
+	    SelectMenu.selectByIndex(selectOptions - 1);
+	    
 		driver.findElement(By.xpath("//*[@id=\"checkbox2\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"postme1\"]")).click();
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	
-	@AfterMethod
+	@AfterClass
 	public void quitDriver() {
 		driver.close();
 	}

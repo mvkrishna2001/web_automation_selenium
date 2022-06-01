@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,7 +17,7 @@ public class Tasks {
 	static WebDriver driver;
 	static String id;
 	
-	@BeforeMethod
+	@BeforeClass
 	public static void driverSetup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -44,8 +44,8 @@ public class Tasks {
 		}
 	}
 	
-	@Test
-	public void createTask() {
+	@Test(priority=1)
+	public void test1createTask() {
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/ul/li[8]/a")).click();
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div[1]/div/div/div[1]/a")).click();
 		
@@ -77,6 +77,11 @@ public class Tasks {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+	}
+	
+	@Test(priority=2)
+	public void test2allocateMember() {
 		driver.findElement(By.xpath("//*[@id=\"example\"]/tbody/tr[2]/td[6]/a[2]")).click();
 		
 		Select SelectMenu = new Select(driver.findElement(By.id("select_common_type")));
@@ -85,9 +90,14 @@ public class Tasks {
 		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div/div[5]/button")).click();
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void quitDriver() {
 		driver.close();
 	}
