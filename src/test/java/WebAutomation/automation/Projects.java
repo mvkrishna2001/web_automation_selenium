@@ -12,12 +12,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 
 
 public class Projects {
 	
 	static WebDriver driver;
 	static String id;
+	static String expectedProjectName;
 	
 	@BeforeClass
 	public static void driverSetup() {
@@ -44,6 +46,7 @@ public class Projects {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	
@@ -53,6 +56,8 @@ public class Projects {
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/ul/li[7]/a")).click();
 		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div[1]/a[1]")).click();
+		
+		expectedProjectName = "Testing Project " + id;
 		
 		WebElement projectName = driver.findElement(By.id("project_name"));
 		projectName.clear();
@@ -76,6 +81,15 @@ public class Projects {
 		
 		driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div/div[6]/button")).click();
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		String actualId = driver.findElement(By.xpath("//*[@id=\"example\"]/tbody/tr[1]/td[2]")).getText();
+		
+		Assert.assertEquals(expectedProjectName, actualId);
 		
 	}
 	
@@ -93,6 +107,7 @@ public class Projects {
 	    
 	    SelectMenu.selectByIndex(selectOptions - 1);
 	    
+	    String expectedCompany = driver.findElement(By.xpath("//*[@id=\"bootstrap-data-table-export\"]/tbody/tr[1]/td[2]")).getText();
 		driver.findElement(By.xpath("//*[@id=\"checkbox2\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"postme1\"]")).click();
 		
@@ -101,6 +116,12 @@ public class Projects {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+		String actualProjectName = driver.findElement(By.xpath("//*[@id=\"example\"]/tbody/tr[1]/td[2]")).getText();
+		String actualCompanyName = driver.findElement(By.xpath("//*[@id=\"example\"]/tbody/tr[1]/td[3]")).getText();
+
+		Assert.assertEquals(expectedProjectName, actualProjectName);
+		Assert.assertEquals(expectedCompany, actualCompanyName);
 	}
 
 	

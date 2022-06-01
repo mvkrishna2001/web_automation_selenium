@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-01T15:42:37 IST" name="Default suite" finished-at="2022-06-01T15:42:59 IST" duration-ms="21975">
+  <suite started-at="2022-06-01T16:55:25 IST" name="Default suite" finished-at="2022-06-01T16:55:47 IST" duration-ms="22194">
     <groups>
     </groups>
-    <test started-at="2022-06-01T15:42:37 IST" name="Default test" finished-at="2022-06-01T15:42:59 IST" duration-ms="21975">
+    <test started-at="2022-06-01T16:55:25 IST" name="Default test" finished-at="2022-06-01T16:55:47 IST" duration-ms="22194">
       <class name="WebAutomation.automation.Projects">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T15:42:37 IST" name="driverSetup" finished-at="2022-06-01T15:42:48 IST" duration-ms="10869" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T16:55:25 IST" name="driverSetup" finished-at="2022-06-01T16:55:35 IST" duration-ms="10014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test1createProject()[pri:1, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T15:42:48 IST" name="test1createProject" finished-at="2022-06-01T15:42:51 IST" duration-ms="2832" status="PASS">
+        <test-method signature="test1createProject()[pri:1, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T16:55:35 IST" name="test1createProject" finished-at="2022-06-01T16:55:40 IST" duration-ms="5566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1createProject -->
-        <test-method signature="test2allocateProjectToCompany()[pri:2, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T15:42:51 IST" name="test2allocateProjectToCompany" finished-at="2022-06-01T15:42:59 IST" duration-ms="8002" status="PASS">
+        <test-method signature="test2allocateProjectToCompany()[pri:2, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T16:55:40 IST" name="test2allocateProjectToCompany" finished-at="2022-06-01T16:55:47 IST" duration-ms="6415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2allocateProjectToCompany -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T15:42:59 IST" name="quitDriver" finished-at="2022-06-01T15:42:59 IST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:WebAutomation.automation.Projects@55634720]" started-at="2022-06-01T16:55:47 IST" name="quitDriver" finished-at="2022-06-01T16:55:47 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
