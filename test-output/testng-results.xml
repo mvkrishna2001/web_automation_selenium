@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-01T16:05:07 IST" name="Default suite" finished-at="2022-06-01T16:06:25 IST" duration-ms="77682">
+    <groups>
+    </groups>
+    <test started-at="2022-06-01T16:05:07 IST" name="Default test" finished-at="2022-06-01T16:06:25 IST" duration-ms="77682">
+      <class name="TestCases.EnquiryTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:05:07 IST" name="setupDriver" finished-at="2022-06-01T16:05:10 IST" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:05:10 IST" name="classSetUp" finished-at="2022-06-01T16:05:17 IST" duration-ms="7825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="testEnquiryPageIsOpened()[pri:1, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:05:17 IST" name="testEnquiryPageIsOpened" finished-at="2022-06-01T16:05:28 IST" duration-ms="10738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnquiryPageIsOpened -->
+        <test-method signature="testEnquiryDetailsPageIsOpened()[pri:2, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:05:28 IST" name="testEnquiryDetailsPageIsOpened" finished-at="2022-06-01T16:05:44 IST" duration-ms="16259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnquiryDetailsPageIsOpened -->
+        <test-method signature="testCorrectEnquiryIsOpened()[pri:3, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:05:44 IST" name="testCorrectEnquiryIsOpened" finished-at="2022-06-01T16:06:00 IST" duration-ms="15696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCorrectEnquiryIsOpened -->
+        <test-method signature="testNoOfComponentsManufacturedIntegerInput()[pri:4, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:06:00 IST" name="testNoOfComponentsManufacturedIntegerInput" finished-at="2022-06-01T16:06:07 IST" duration-ms="7174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoOfComponentsManufacturedIntegerInput -->
+        <test-method signature="testNoOfComponentsManufacturedStringInput()[pri:5, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:06:07 IST" name="testNoOfComponentsManufacturedStringInput" finished-at="2022-06-01T16:06:14 IST" duration-ms="7125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoOfComponentsManufacturedStringInput -->
+        <test-method signature="testTotalPriceForComponents()[pri:6, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:06:14 IST" name="testTotalPriceForComponents" finished-at="2022-06-01T16:06:25 IST" duration-ms="10180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTotalPriceForComponents -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.EnquiryTest@70e9c95d]" started-at="2022-06-01T16:06:25 IST" name="tearDown" finished-at="2022-06-01T16:06:25 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.EnquiryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
