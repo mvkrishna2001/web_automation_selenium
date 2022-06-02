@@ -103,4 +103,33 @@ public class EnquiryTest extends BaseClass {
 		
 	}
 	
+	@Test(priority=7)
+	public void testShiftEnquiryPageIsOpened() {
+		sleep(2000);
+		ep.clickEnquiryDropdown();
+		ep.clickEnquiryShiftAnalysis();
+		sleep(2000);
+		String val = ep.getEnquiryPageIsOpenedText();
+		Assert.assertEquals("ENQUIRY", val);
+		
+	}
+	
+	@Test(priority=8)
+	public void testviewShiftEnquiryIsOpened() {
+		sleep(2000);
+		ep.clickViewShiftDetails();
+		String check = ep.getviewShiftEnquiryIsOpen();
+		Assert.assertEquals("SHIFT ANALYSIS", check);
+	}
+	
+	@Test(priority=9)
+	public void testverifySearchShiftAnalysis() {
+		ep.getBack();
+		sleep(2000);
+		ep.setSearchShiftAnalysis("James");
+		sleep(1000);
+		String result = ep.getSearchShiftAnalysisResult();
+		Assert.assertEquals("James",result);	
+	}
+	
 }

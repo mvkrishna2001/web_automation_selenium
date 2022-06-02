@@ -59,6 +59,21 @@ WebDriver ldriver;
 	@FindBy(xpath="//input[@id='totaltoolsprice']")
 	WebElement totalToolPrice;
 	
+	@FindBy(xpath="//a[normalize-space()='Enquiry Shift Analysis']")
+	WebElement enquiryShiftAnalysis;
+	
+	@FindBy(xpath="//body[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/a[1]")
+	WebElement viewShiftDetails;
+	
+	@FindBy(xpath="//h1[normalize-space()='SHIFT ANALYSIS']")
+	WebElement verifyShiftAnalysisTab;
+	
+	@FindBy(xpath="//input[@type='search']")
+	WebElement searchShiftAnalysis;
+	
+	@FindBy(xpath="//td[2]")
+	WebElement verifySearchShiftAnalysis;
+	
 	public void clickEnquiryDropdown() {
 		enquiryDropdown.click();
 	}
@@ -79,6 +94,16 @@ WebDriver ldriver;
 	
 	public void searchQueries(String value) {
 		searchEnquiries.sendKeys(value);
+	}
+	
+	public void clickEnquiryShiftAnalysis() {
+		enquiryShiftAnalysis.click();
+	}
+	
+	public void clickViewShiftDetails() {
+		viewShiftDetails.click();
+		String url = "https://tms.pisystindia.com/admin/enquiry/viewShifts/10";
+		ldriver.navigate().to(url);
 	}
 	
 	public String getEnquiryPageIsOpenedText() {
@@ -139,5 +164,15 @@ WebDriver ldriver;
 		return totalToolPrice.getAttribute("value");
 	}
 	
+	public String getviewShiftEnquiryIsOpen() {
+		return verifyShiftAnalysisTab.getText();
+	}
 	
+	public void setSearchShiftAnalysis(String value) {
+		searchShiftAnalysis.sendKeys(value);
+	}
+	
+	public String getSearchShiftAnalysisResult() {
+		return verifySearchShiftAnalysis.getText();
+	}
 }
