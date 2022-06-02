@@ -1,4 +1,4 @@
-package TestCases;
+package WebAutomation.automation.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

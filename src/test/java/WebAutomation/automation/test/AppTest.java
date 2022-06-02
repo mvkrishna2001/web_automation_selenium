@@ -1,4 +1,4 @@
-package WebAutomation.automation;
+package WebAutomation.automation.test;
 
 import static org.junit.Assert.assertTrue;
 

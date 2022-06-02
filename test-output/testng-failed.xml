@@ -3,15 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.EnquiryTest">
+      <class name="WebAutomation.automation.test.EnquiryTest">
         <methods>
           <include name="setupDriver"/>
-          <include name="testviewShiftEnquiryIsOpened"/>
-          <include name="classSetUp"/>
-          <include name="tearDown"/>
           <include name="testverifySearchShiftAnalysis"/>
+          <include name="testShiftEnquiryPageIsOpened"/>
+          <include name="classSetUp"/>
+          <include name="testSearchEnquiry"/>
+          <include name="tearDown"/>
+          <include name="testEnquiryPageIsOpened"/>
+          <include name="testCorrectEnquiryIsOpened"/>
+          <include name="testEnquiryDetailsPageIsOpened"/>
+          <include name="testNoOfComponentsManufacturedStringInput"/>
+          <include name="testNoOfComponentsManufacturedIntegerInput"/>
+          <include name="testTotalPriceForComponents"/>
+          <include name="testviewShiftEnquiryIsOpened"/>
         </methods>
-      </class> <!-- TestCases.EnquiryTest -->
+      </class> <!-- WebAutomation.automation.test.EnquiryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

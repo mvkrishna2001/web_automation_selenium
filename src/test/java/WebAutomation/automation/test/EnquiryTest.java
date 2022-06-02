@@ -1,4 +1,4 @@
-package TestCases;
+package WebAutomation.automation.test;
 
 import java.text.DecimalFormat;
 

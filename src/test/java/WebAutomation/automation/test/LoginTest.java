@@ -1,4 +1,4 @@
-package TestCases;
+package WebAutomation.automation.test;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
