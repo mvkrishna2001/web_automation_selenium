@@ -104,6 +104,16 @@ public class EnquiryTest extends BaseClass {
 	}
 	
 	@Test(priority=7)
+	public void testSearchEnquiry() {
+		sleep(2000);
+		ep.getBack();
+		sleep(2000);
+		ep.searchEnquiries("Hammer");
+		String check = ep.getSearchEnquiryResult();
+		Assert.assertEquals("Hammer", check);
+	}
+	
+	@Test(priority=8)
 	public void testShiftEnquiryPageIsOpened() {
 		sleep(2000);
 		ep.clickEnquiryDropdown();
@@ -114,7 +124,7 @@ public class EnquiryTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=8)
+	@Test(priority=9)
 	public void testviewShiftEnquiryIsOpened() {
 		sleep(2000);
 		ep.clickViewShiftDetails();
@@ -122,8 +132,9 @@ public class EnquiryTest extends BaseClass {
 		Assert.assertEquals("SHIFT ANALYSIS", check);
 	}
 	
-	@Test(priority=9)
+	@Test(priority=10)
 	public void testverifySearchShiftAnalysis() {
+		sleep(2000);
 		ep.getBack();
 		sleep(2000);
 		ep.setSearchShiftAnalysis("James");

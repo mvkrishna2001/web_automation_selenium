@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1916994975\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1983222692\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,6 +125,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="TestCases.EnquiryTest" class="method navigator-link" hash-for-method="testNoOfComponentsManufacturedStringInput">testNoOfComponentsManufacturedStringInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.EnquiryTest" class="method navigator-link" hash-for-method="testSearchEnquiry">testSearchEnquiry</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,6 +207,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testSearchEnquiry">
+                  </a> <!-- testSearchEnquiry -->
+                  <span class="method-name">testSearchEnquiry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testShiftEnquiryPageIsOpened">
                   </a> <!-- testShiftEnquiryPageIsOpened -->
                   <span class="method-name">testShiftEnquiryPageIsOpened</span>
@@ -233,7 +245,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1916994975\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1983222692\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -282,43 +294,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEnquiryDetailsPageIsOpened')
 data.setCell(0, 2, 'TestCases.EnquiryTest')
-data.setCell(0, 3, 19653);
+data.setCell(0, 3, 18788);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCorrectEnquiryIsOpened')
 data.setCell(1, 2, 'TestCases.EnquiryTest')
-data.setCell(1, 3, 17761);
+data.setCell(1, 3, 16741);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testEnquiryPageIsOpened')
 data.setCell(2, 2, 'TestCases.EnquiryTest')
-data.setCell(2, 3, 13512);
+data.setCell(2, 3, 11514);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testTotalPriceForComponents')
 data.setCell(3, 2, 'TestCases.EnquiryTest')
-data.setCell(3, 3, 10530);
+data.setCell(3, 3, 10408);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testNoOfComponentsManufacturedIntegerInput')
 data.setCell(4, 2, 'TestCases.EnquiryTest')
-data.setCell(4, 3, 7544);
+data.setCell(4, 3, 7531);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testNoOfComponentsManufacturedStringInput')
 data.setCell(5, 2, 'TestCases.EnquiryTest')
-data.setCell(5, 3, 7334);
+data.setCell(5, 3, 7227);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testShiftEnquiryPageIsOpened')
 data.setCell(6, 2, 'TestCases.EnquiryTest')
-data.setCell(6, 3, 6994);
+data.setCell(6, 3, 5759);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testviewShiftEnquiryIsOpened')
 data.setCell(7, 2, 'TestCases.EnquiryTest')
-data.setCell(7, 3, 5556);
+data.setCell(7, 3, 5402);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testverifySearchShiftAnalysis')
 data.setCell(8, 2, 'TestCases.EnquiryTest')
-data.setCell(8, 3, 4937);
+data.setCell(8, 3, 4715);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSearchEnquiry')
+data.setCell(9, 2, 'TestCases.EnquiryTest')
+data.setCell(9, 3, 3652);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -356,47 +372,51 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">classSetUp</span>
-                <span class="method-start">13091 ms</span>
+                <span class="method-start">8430 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testEnquiryPageIsOpened</span>
-                <span class="method-start">23193 ms</span>
+                <span class="method-start">18967 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testEnquiryDetailsPageIsOpened</span>
-                <span class="method-start">36718 ms</span>
+                <span class="method-start">30488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCorrectEnquiryIsOpened</span>
-                <span class="method-start">56377 ms</span>
+                <span class="method-start">49279 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNoOfComponentsManufacturedIntegerInput</span>
-                <span class="method-start">74142 ms</span>
+                <span class="method-start">66022 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNoOfComponentsManufacturedStringInput</span>
-                <span class="method-start">81690 ms</span>
+                <span class="method-start">73558 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTotalPriceForComponents</span>
-                <span class="method-start">89028 ms</span>
+                <span class="method-start">80789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchEnquiry</span>
+                <span class="method-start">91200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testShiftEnquiryPageIsOpened</span>
-                <span class="method-start">99563 ms</span>
+                <span class="method-start">94858 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testviewShiftEnquiryIsOpened</span>
-                <span class="method-start">106560 ms</span>
+                <span class="method-start">100619 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testverifySearchShiftAnalysis</span>
-                <span class="method-start">112120 ms</span>
+                <span class="method-start">106026 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">117063 ms</span>
+                <span class="method-start">110743 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

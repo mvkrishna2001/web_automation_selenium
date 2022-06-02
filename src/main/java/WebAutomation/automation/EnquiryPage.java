@@ -74,6 +74,9 @@ WebDriver ldriver;
 	@FindBy(xpath="//td[2]")
 	WebElement verifySearchShiftAnalysis;
 	
+	@FindBy(xpath="//tr[@class='odd']//td[contains(text(),'Hammer')]")
+	WebElement verifySearchEnquiry;
+	
 	public void clickEnquiryDropdown() {
 		enquiryDropdown.click();
 	}
@@ -174,5 +177,9 @@ WebDriver ldriver;
 	
 	public String getSearchShiftAnalysisResult() {
 		return verifySearchShiftAnalysis.getText();
+	}
+	
+	public String getSearchEnquiryResult() {
+		return verifySearchEnquiry.getText();
 	}
 }

@@ -6,9 +6,10 @@
       <class name="TestCases.EnquiryTest">
         <methods>
           <include name="setupDriver"/>
-          <include name="tearDown"/>
+          <include name="testviewShiftEnquiryIsOpened"/>
           <include name="classSetUp"/>
-          <include name="testNoOfComponentsManufacturedStringInput"/>
+          <include name="tearDown"/>
+          <include name="testverifySearchShiftAnalysis"/>
         </methods>
       </class> <!-- TestCases.EnquiryTest -->
     </classes>
