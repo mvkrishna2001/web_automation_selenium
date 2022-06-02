@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 9 failed,   2 passed</span>
+                    <span class="method-stats">10 methods, 10 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -110,6 +110,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Suite" title="WebAutomation.automation.test.EnquiryTest" class="method navigator-link" hash-for-method="testEnquiryDetailsPageIsOpened">testEnquiryDetailsPageIsOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="WebAutomation.automation.test.EnquiryTest" class="method navigator-link" hash-for-method="testEnquiryPageIsOpened">testEnquiryPageIsOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -149,25 +154,6 @@
                       <br/>
                     </div> <!-- method-list-content failed suite-Test_Suite -->
                   </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
-                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="WebAutomation.automation.test.EnquiryTest" class="method navigator-link" hash-for-method="testEnquiryPageIsOpened">testEnquiryPageIsOpened</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="WebAutomation.automation.test.LoginTest" class="method navigator-link" hash-for-method="testloginUser">testloginUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Test_Suite -->
-                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -194,9 +180,9 @@
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//tbody/tr[1]/td[4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//tbody/tr[1]/td[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -228,9 +214,38 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//h1[normalize-space()=&apos;ENQUIRY DETAILS&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, get {url=https://tms.pisystindia.com/admin/enquiry/viewEnquirydetails/10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:998)
+	at WebAutomation.automation.EnquiryPage.clickViewEnquiryDetails(EnquiryPage.java:95)
+	at WebAutomation.automation.test.EnquiryTest.testEnquiryDetailsPageIsOpened(EnquiryTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnquiryPageIsOpened">
+                  </a> <!-- testEnquiryPageIsOpened -->
+                  <span class="method-name">testEnquiryPageIsOpened</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//a[@class=&apos;sidebar-sub-toggle&apos;][normalize-space()=&apos;Enquiry&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -244,9 +259,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-	at WebAutomation.automation.EnquiryPage.getEnquiryDetailsPageIsOpenedText(EnquiryPage.java:117)
-	at WebAutomation.automation.test.EnquiryTest.testEnquiryDetailsPageIsOpened(EnquiryTest.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at WebAutomation.automation.EnquiryPage.clickEnquiryDropdown(EnquiryPage.java:81)
+	at WebAutomation.automation.test.EnquiryTest.testEnquiryPageIsOpened(EnquiryTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -262,9 +277,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -296,9 +311,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -330,9 +345,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, goBack {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, goBack {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -360,9 +375,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//a[@class=&apos;sidebar-sub-toggle&apos;][normalize-space()=&apos;Enquiry&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//a[@class=&apos;sidebar-sub-toggle&apos;][normalize-space()=&apos;Enquiry&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -394,9 +409,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//input[@id=&apos;component_name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -428,9 +443,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, goBack {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, goBack {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -458,9 +473,9 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;ZCHD-CQR-UTKARS&apos;, ip: &apos;10.38.144.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d490d92c2caa3349acbc4d6b6dee8622, findElement {using=xpath, value=//body[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54568/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d490d92c2caa3349acbc4d6b6dee8622
+Command: [366e929b4aa4f405654583b592007688, findElement {using=xpath, value=//body[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54860/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 366e929b4aa4f405654583b592007688
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -484,36 +499,6 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test_Suite-class-failed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">WebAutomation.automation.test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testloginUser">
-                  </a> <!-- testloginUser -->
-                  <span class="method-name">testloginUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">WebAutomation.automation.test.EnquiryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testEnquiryPageIsOpened">
-                  </a> <!-- testEnquiryPageIsOpened -->
-                  <span class="method-name">testEnquiryPageIsOpened</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
         </div> <!-- panel Test_Suite -->
         <div panel-name="test-xml-Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -526,7 +511,6 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
 &lt;suite name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Automation Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;WebAutomation.automation.test.LoginTest&quot;/&gt;
       &lt;class name=&quot;WebAutomation.automation.test.EnquiryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Automation Tests --&gt;
@@ -541,7 +525,7 @@ Session ID: d490d92c2caa3349acbc4d6b6dee8622
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Automation Tests (2 classes)</span>
+                <span class="test-name">Automation Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -567,51 +551,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testEnquiryDetailsPageIsOpened')
+data.setCell(0, 1, 'testCorrectEnquiryIsOpened')
 data.setCell(0, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(0, 3, 23066);
+data.setCell(0, 3, 17238);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testNoOfComponentsManufacturedIntegerInput')
+data.setCell(1, 1, 'testTotalPriceForComponents')
 data.setCell(1, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(1, 3, 17218);
+data.setCell(1, 3, 17229);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testTotalPriceForComponents')
+data.setCell(2, 1, 'testNoOfComponentsManufacturedIntegerInput')
 data.setCell(2, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(2, 3, 17198);
+data.setCell(2, 3, 17215);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCorrectEnquiryIsOpened')
+data.setCell(3, 1, 'testEnquiryPageIsOpened')
 data.setCell(3, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(3, 3, 17166);
+data.setCell(3, 3, 17156);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testverifySearchShiftAnalysis')
+data.setCell(4, 1, 'testEnquiryDetailsPageIsOpened')
 data.setCell(4, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(4, 3, 14237);
+data.setCell(4, 3, 17155);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testShiftEnquiryPageIsOpened')
+data.setCell(5, 1, 'testSearchEnquiry')
 data.setCell(5, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(5, 3, 14212);
+data.setCell(5, 3, 14211);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testNoOfComponentsManufacturedStringInput')
 data.setCell(6, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(6, 3, 14203);
+data.setCell(6, 3, 14207);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSearchEnquiry')
+data.setCell(7, 1, 'testverifySearchShiftAnalysis')
 data.setCell(7, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(7, 3, 14203);
+data.setCell(7, 3, 14199);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testviewShiftEnquiryIsOpened')
+data.setCell(8, 1, 'testShiftEnquiryPageIsOpened')
 data.setCell(8, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(8, 3, 14198);
+data.setCell(8, 3, 14194);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testEnquiryPageIsOpened')
+data.setCell(9, 1, 'testviewShiftEnquiryIsOpened')
 data.setCell(9, 2, 'WebAutomation.automation.test.EnquiryTest')
-data.setCell(9, 3, 11039);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testloginUser')
-data.setCell(10, 2, 'WebAutomation.automation.test.LoginTest')
-data.setCell(10, 3, 2960);
+data.setCell(9, 3, 14157);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
@@ -642,95 +622,78 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">WebAutomation.automation.test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">WebAutomation.automation.test.EnquiryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setupDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">classSetUp</span>
-                <span class="method-start">2861 ms</span>
+                <span class="method-start">2714 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testloginUser</span>
-                <span class="method-start">2941 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5909 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">WebAutomation.automation.test.EnquiryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setupDriver</span>
-                <span class="method-start">6161 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">classSetUp</span>
-                <span class="method-start">7447 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testEnquiryPageIsOpened</span>
-                <span class="method-start">15391 ms</span>
+                <span class="method-start">12111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testEnquiryDetailsPageIsOpened</span>
-                <span class="method-start">26432 ms</span>
+                <span class="method-start">29279 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCorrectEnquiryIsOpened</span>
-                <span class="method-start">49504 ms</span>
+                <span class="method-start">46436 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testNoOfComponentsManufacturedIntegerInput</span>
-                <span class="method-start">66672 ms</span>
+                <span class="method-start">63678 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testNoOfComponentsManufacturedStringInput</span>
-                <span class="method-start">83895 ms</span>
+                <span class="method-start">80898 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testTotalPriceForComponents</span>
-                <span class="method-start">98104 ms</span>
+                <span class="method-start">95109 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSearchEnquiry</span>
-                <span class="method-start">115308 ms</span>
+                <span class="method-start">112341 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testShiftEnquiryPageIsOpened</span>
-                <span class="method-start">129514 ms</span>
+                <span class="method-start">126557 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testviewShiftEnquiryIsOpened</span>
-                <span class="method-start">143730 ms</span>
+                <span class="method-start">140753 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testverifySearchShiftAnalysis</span>
-                <span class="method-start">157933 ms</span>
+                <span class="method-start">154915 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">172175 ms</span>
+                <span class="method-start">169118 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

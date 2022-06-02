@@ -5,12 +5,13 @@
     <classes>
       <class name="WebAutomation.automation.test.EnquiryTest">
         <methods>
-          <include name="setupDriver"/>
           <include name="testverifySearchShiftAnalysis"/>
-          <include name="testSearchEnquiry"/>
+          <include name="setupDriver"/>
           <include name="classSetUp"/>
           <include name="testShiftEnquiryPageIsOpened"/>
+          <include name="testSearchEnquiry"/>
           <include name="tearDown"/>
+          <include name="testEnquiryPageIsOpened"/>
           <include name="testCorrectEnquiryIsOpened"/>
           <include name="testNoOfComponentsManufacturedStringInput"/>
           <include name="testEnquiryDetailsPageIsOpened"/>
