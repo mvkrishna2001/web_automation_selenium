@@ -27,8 +27,8 @@ public class ComponentsTest extends BaseClass {
 	
 	@Test(priority = 2)
 	public void AddComponentTest(){
-		String compname = "Test111";
-		String compcode = "11111";
+		String compname = "Testing";
+		String compcode = "22";
 		String compmat = "raw";
 		String compdesc = "dihf";
 		cp.ClickComponentUtility();
@@ -56,7 +56,7 @@ public class ComponentsTest extends BaseClass {
 	
 	@Test(priority = 3)
 	public void UpdateComponentTest() {
-		String compname = "UpdatedTest1111";
+		String compname = "UpdatedTesting";
 //		cp.ClickComponentUtility();
 //		sleep(1000);
 //		cp.ClickComponents();
@@ -91,8 +91,8 @@ public class ComponentsTest extends BaseClass {
 	
 	@Test(priority = 5)
 	public void AddMachineTest(){
-		String machname = "Test1111";
-		String machnum = "111111";
+		String machname = "Testing";
+		String machnum = "22";
 		String machdesc = "dihfd";
 		cp.ClickComponentUtility();
 		sleep(1000);
@@ -157,8 +157,8 @@ public class ComponentsTest extends BaseClass {
 
 	@Test(priority = 8)
 	public void AddOperationTest(){
-		String opname = "Test111";
-		String opcode = "11111";
+		String opname = "Testing";
+		String opcode = "22";
 		String opdesc = "ddgghd";
 		cp.ClickComponentUtility();
 		sleep(1000);
@@ -184,7 +184,7 @@ public class ComponentsTest extends BaseClass {
 	
 	@Test(priority = 9)
 	public void UpdateOperationsTest() {
-		String opname = "UpdatedTest111";
+		String opname = "UpdatedTesting";
 //		cp.ClickComponentUtility();
 //		sleep(1000);
 //		cp.ClickOperations();
