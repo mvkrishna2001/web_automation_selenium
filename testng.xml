@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="WebAutomation.automation.Login_Test"/>
       <class name="WebAutomation.automation.ComponentsTest"/>
     </classes>
   </test> <!-- Test -->
